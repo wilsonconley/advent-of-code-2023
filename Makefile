@@ -4,7 +4,7 @@ SHELL := /bin/bash
 check:
 	mypy --strict --pretty --show-error-codes .
 	black --diff --check .
-	pylint code
+	pylint .
 
 .PHONY: leaderboard
 leaderboard:
